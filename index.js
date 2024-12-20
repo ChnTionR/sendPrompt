@@ -1,6 +1,6 @@
 const http = request('http');
 
-const server = createServer((req, res) => {
+const server = http.createServer((req, res) => {
     if(req.url === '/'){
         res.statusCode = 200;
         console.log(prompt("send me a message"));
